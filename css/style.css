@@ -1,0 +1,230 @@
+/*
+this content is stored in a file named "site.css"
+in a directory named "css" */
+
+
+h1 {
+    color: red;
+    text-decoration: underline;
+    font-family: 'Pacifico', cursive;
+}
+
+/* seperat each title element */
+
+h2 {
+    color: green;
+}
+
+/* addin*/
+
+h6 {
+    color: yellow;
+    font-weight: lighter;
+
+}
+
+h4 {
+    color: blue;
+    text-align: center;
+}
+
+h5 {
+    color: red;
+    text-decoration: underline;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#main-header {
+    color: blueviolet;
+    font-family: chiller;
+}
+
+.fancy-header {
+    color: green;
+    font-family: verdana, sans-serif;
+}
+ /*
+title, h1 {
+    color: BLACK;
+    font-weight: bold;
+    font-family: times roman;
+    text-align: center;  */
+
+
+body {
+    background-color: yellow
+}
+
+.extra-large {
+    font-size: 100px;
+}
+
+/* m-50, w- 500, p-10 */
+
+#container {
+    margin: 25px;
+    width: 500px;
+    padding: 5px;
+    position: center;
+}
+
+/* selector for all "h1" elements
+that are a descendent of id="container"
+and hace a class of "fancy-header"*/
+#container, .fancy-header {
+    color: blue;
+    text-decoration: underline;
+
+}
+
+/* selector for all "em" elements*/
+
+em {
+    font-weight: bold;
+}
+
+/* selector for all elements with class="article"*/
+.article {
+    clear: both;
+}
+
+/* selector for all "anchor" elements
+that ar a direct child of an element with class="article" */
+
+.article > a {
+    float: right;
+}
+
+#containers > h1 {
+    color: blue;
+}
+
+
+
+/* unvisted link */
+a:link {
+    color: red;
+}
+
+/* vistied link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    border-radius: 2px;
+    background-color: #ffff00;
+    border: none;
+    color: #008000;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.6s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Tangerine', cursive;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.button span:after {
+    content: '\00bb';
+    /* position: absolute;                */
+    opacity: 0;
+    top: 222em;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 20px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
