@@ -2,18 +2,18 @@
 @keyframes glow {
     0%   {background-color: black;}
     10%  {background-color: grey;}
-    15%  {background-color: blue;}
+    15%  {background-color: yellowgreen;}
     100% {background-color: #2effcc;}
 
 }
 
 /* The element to apply the animation to */
 div {
-    width: 10000px;
-    height: 10000px;
+    width: 625px;
+    height: 625px;
     background-color: #2effcc;
     animation-name: glow;
-    animation-duration:50s;
+    animation-duration:30s;
 }
 
 html, body {
@@ -23,15 +23,19 @@ html, body {
 
 h1 {
    margin:0;
+   text-align: center;
 }
 
-
+h6 {
+    text-align: center;
+}
 
 
 /* Container holding the image and the text */
 .container {
     position: relative;
     color: black;
+
 
 }
 
@@ -65,4 +69,23 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+table {
+    width: 100%
+}
+
+th {
+    height: 50px
+}
+
+h1, h2 {
+    padding: 15px;
+    text-align: left;
+}
+
+kick {
+    font-size: 50px;
+    color: #blue;
 }
