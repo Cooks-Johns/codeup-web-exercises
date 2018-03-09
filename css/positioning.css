@@ -64,8 +64,16 @@ body {
     background-color: purple;
    /* margin-left: 150px  */
     float: left;
-;
+
 }
+
+
+#ribbon {
+    position: relative;
+    top: -100px;
+    left: 265px;
+}
+
 
 h1 {
     text-align: center;
