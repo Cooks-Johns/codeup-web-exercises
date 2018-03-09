@@ -27,3 +27,11 @@
     weight; 500px;
     background-color: green;
 }
+
+
+#container {
+    margin: 25px;
+    width: 500px;
+    padding: 5px;
+    position: center;
+}

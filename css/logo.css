@@ -1,0 +1,56 @@
+.container1 {
+    /*float: left;*/
+}
+
+
+.container {
+    margin: 25px;
+    padding: 5px;
+    padding-top: 0;
+    height: 100%;
+    backgroud-color: #cbd1c0;
+}
+
+.boxes {
+    border: none;
+    height: 500px;
+    padding: 0;
+    color: #040101;
+    font-weight: bold;
+    margin: 1px;
+}
+
+#dark {
+    height: 600px;
+    background-color: #999f8e;
+}
+
+#light {
+    float: left;
+    height: 600px;
+    background-color: #cbd1c0;
+    background-position: center;
+    padding: 0;
+}
+
+
+.h1 {
+    text-align: center;
+    color: #244b35;
+}
+
+a {
+    color: black;
+}
+
+h2, h1, p {
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-emphasis: justify;
+     padding: 15px;
+}
+
+p {
+
+}
