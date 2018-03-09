@@ -21,36 +21,67 @@
 }
 
 #dark {
-    height: 600px;
+    height: 602px;
     background-color: #999f8e;
 }
 
 #light {
     float: left;
-    height: 600px;
+    height: 579px;
     background-color: #cbd1c0;
     background-position: center;
-    padding: 0;
+    padding: 11px;
 }
 
 
-.h1 {
+#logo {
     text-align: center;
-    color: #244b35;
+    color: darkgreen;
+    margin: 0;
+    padding: 0;
+    padding: 15px;
+    padding-left: 100px;
 }
 
 a {
     color: black;
 }
 
-h2, h1, p {
+h2, p {
     margin: 0;
     padding: 0;
     color: black;
-    text-emphasis: justify;
-     padding: 15px;
+    padding: 15px;
+    padding-left: 100px;
 }
 
-p {
 
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
 }
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+

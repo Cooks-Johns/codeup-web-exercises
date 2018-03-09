@@ -1,0 +1,24 @@
+header {
+    background-color: #Ff9980;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    overflow: auto;
+
+}
+
+aside {
+    background-color: pink;
+    float: left;
+    width: 204px;
+}
+
+main {
+    background-color: peru;
+    float: left;
+    width: 820px;
+}

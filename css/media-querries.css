@@ -1,0 +1,43 @@
+/** {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+
+.top {
+    background-color: #a1fff3;
+}
+
+#skip {
+    margin: 0 auto;
+}
+
+li {
+    width: 50px;
+    height: 10px;
+    padding: 10px;
+    color: grey;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* screen sizes 500px and up */
+@media screen and (min-width:500px) {
+    selector {
+        property: value;
+    }
+}
+
+/* screen sizes between 960px and 1200px */
+@media screen and (min-width:960px) and (max-width:1200px) {
+    /* ... */
+}
+
