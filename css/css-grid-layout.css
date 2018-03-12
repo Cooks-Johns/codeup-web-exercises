@@ -2,12 +2,14 @@
 .container {
     overflow: auto;
     max-width: 1024px;
-    margin: 0 auto;
+    margin: 10px 0;
     text-align: center;
 }
 
 .row { /* clearfix */
     width: 100%;
+    overflow: auto;
+    margin: 20px 0;
 }
 
 .row:after {
@@ -19,33 +21,33 @@
 .column {
     float: left;
     box-sizing: border-box;
+    padding: 10px;
+    background-color: lightgrey;
+    border: 1px solid black;
     /*this won't add the padding and the
     border to the width of the element*/
 
 }
 .col-1-half {
     width: 50%;
-    height: 10%;
     /*background-color: #77AF00;*/
-    border: 10px solid red;
+    /*border: 10px solid red;*/
 }
 .col-2-thirds {
     width: 33.33%;
     /*background-color: yellow;*/
-    border: 10px solid yellowgreen;
+    /*border: 10px solid yellowgreen;*/
 
 }
 .col-3-fourth {
     width: 25%;
-    background-color: #FF9800;
-    border: 10px solid crimson;
+    /*background-color: #FF9800;*/
+    /*border: 10px solid crimson;*/
 }
 
 .col-4-eights {
-    width: .125%;
+    width: 12.5%;
     /*background-color: lightseagreen;*/
-    border: 10px solid #9bfcff;
-    height: 3%;
 }
 
 .col-1-half,
@@ -53,31 +55,21 @@
 .col-3-fourth,
 .col-4-eights {
     float: left;
-    width: 100%;
+
 }
 
-@media screen and (max-width: 1200px) {
-    .col-1-half {width: 50%;}
-    .col-2-thirds {width: 33.3333%;}
-    .col-3-fourth { width: 25%;}
-    .col-4-eights { width: .125%;}
+/*@media screen and (max-width: 1200px) {*/
+    /*.col-1-half {width: 50%;}*/
+    /*.col-2-thirds {width: 33.3333%;}*/
+    /*.col-3-fourth { width: 25%;}*/
+    /*.col-4-eights { width: 12.5%;}*/
 
-    }
-}
-@media screen and (max-width: 768px) {
-    .col-1-half,
-    .col-2-thirds,
-    .col-3-fourth,
-    .col-4-eights {
-        width: 100%;
-    }
-}
+/*}*/
 
-h1  {
-    font-color: fuchsia;
-    text-align: center;
-}
-
-ul  {
-    float: right;
-}
+/*@media screen and (max-width: 768px) {*/
+    /*.col-1-half,*/
+    /*.col-2-thirds,*/
+    /*.col-3-fourth,*/
+    /*.col-4-eights {*/
+        /*width: 100%;*/
+    /*}*/
