@@ -17,7 +17,7 @@
     padding: 0;
     color: #040101;
     font-weight: bold;
-    margin: 1px;
+    margin: 0;
 }
 
 #dark {
@@ -27,7 +27,7 @@
 
 #light {
     float: left;
-    height: 579px;
+    height: 580px;
     background-color: #cbd1c0;
     background-position: center;
     padding: 11px;
@@ -41,10 +41,12 @@
     padding: 0;
     padding: 15px;
     padding-left: 100px;
+    font-family: fantasy;
 }
 
 a {
     color: black;
+    
 }
 
 h2, p {
@@ -53,6 +55,7 @@ h2, p {
     color: black;
     padding: 15px;
     padding-left: 100px;
+    font-family: 'Karma', serif;
 }
 
 
@@ -84,4 +87,8 @@ h2, p {
     right: 16px;
 }
 
+
+coolin {
+
+}
 

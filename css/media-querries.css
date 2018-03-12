@@ -1,43 +1,155 @@
+/*================= MOBILE SITE ============*/
+
 /** {*/
     /*margin: 0;*/
     /*padding: 0;*/
 /*}*/
+/**/
+/*.top {*/
+    /*background-color: #a1fff3;*/
+/*}*/
+/**/
+/*.skip {*/
+    /*margin: 0 auto;*/
+/*}*/
+/**/
+/*.nav-links {*/
+    /*width: 50px;*/
+    /*height: 10px;*/
+    /*padding: 10px;*/
+    /*color: grey;*/
+    /*font-weight: bold;*/
+    /*margin: 10px;*/
+/**/
+/*}*/
+/**/
+/*#nav-links {*/
+    /*list-style-type: none;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/**/
+/*}*/
+/**/
+ /*screen sizes 500px and up */
+/*@media screen and (min-width:500px) {*/
+    /*selector {*/
+        /*property: value;*/
+    /*}*/
+/*}*/
+/**/
+/**/
+/**/
+/*===================   DESK TOP    ====================*/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+ /*===================  ICONS =========================*/
+
+/*.fa {*/
+    /*padding: 20px;*/
+    /*font-size: 30px;*/
+    /*width: 50;*/
+    /*text-align: center;*/
+    /*text-decoration: none;*/
+/*}*/
+/**/
+/*.fa:hover {*/
+    /*opacity: .05;*/
+/*}*/
+/**/
+/*.fa-facebook {*/
+    /*background: chartreuse;*/
+    /*color: white;*/
+/*}*/
+/**/
+/*.fa-twitter {*/
+    /*background: #55acee;*/
+    /*color: white;*/
+/*}*/
+/**/
+/**/
+/**/
+/**/
+ /*screen sizes between 960px and 1200px */
+/*@media screen and (min-width:960px) and (max-width:1200px) {*/
+     /*... */
+/*}*/
 
 
-.top {
-    background-color: #a1fff3;
-}
-
-#skip {
-    margin: 0 auto;
-}
-
-li {
-    width: 50px;
-    height: 10px;
-    padding: 10px;
-    color: grey;
-    font-weight: bold;
-    margin: 10px;
-
-}
-
-ul {
-    list-style-type: none;
+*{
     margin: 0;
     padding: 0;
+}
+
+body {
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.alert-info {
+    color: #000;
+    text-decoration: none;
 
 }
 
-/* screen sizes 500px and up */
-@media screen and (min-width:500px) {
-    selector {
-        property: value;
-    }
+.nav-links li {
+    background-color: #add8e6;
+    border: 2px solid #d3d3d3;
+    padding: 1em;
+    text-align: center;
 }
 
-/* screen sizes between 960px and 1200px */
-@media screen and (min-width:960px) and (max-width:1200px) {
-    /* ... */
+
+.nav-links {
+    padding-left: 0;
 }
+
+.header-img img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
