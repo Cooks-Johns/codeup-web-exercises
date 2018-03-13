@@ -4,12 +4,15 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Intro to Bootstrap</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
               integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
         <!--=====  Local Tag  <link rel="stylesheet" href="css/bootstrap.min.css"> =====-->
         <link rel="stylesheet" href="css/custom.css">
 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     </head>
 
@@ -17,65 +20,229 @@
 
     <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">Pizza world</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
+           <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#cheese">Order Online</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+               <li class="nav-item">
+                   <a class="nav-link" href="#">Menu</a>
+               </li>
+
+            <li class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search stores near you! </button>
+            </li>
+          </ul>
+
+            <!--============= ADD IMG  =================-->
+
+
+            <button class="btn my-2 my-sm-0" type="submit"<img src="#" class="material-icon">Sign up</button>
         </div>
     </nav>
+
+
+    <!-----============== Jumbo Tron  =================-->
                     
     <main class="container">
 
-                <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="imb/pizza.png" alt="fruts">
-                                <h1 class="Name">Welcome To Pizza World</h1>
-                            </div>
-                        </div>
-                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-          </main>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Welcome To Pizza World</h1>
+
+            </div>
+        </div>
+        <!--=================== Cards ==================-->
+
+        <H2>Build Your Own Pizza</H2>
+
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#cheese"><span class="badge badge-pill badge-dark">1</span>
+                    Size and Crust</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><span class="badge badge-pill badge-dark">2</span>
+                    Cheese and Sauce</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><span class="badge badge-pill badge-dark">3</span>
+                    Toppings</a>
+            </li>
+        </ul>
+
+        <div class="card" id="cheese">
+          <div class="card-body">
+    <h3 class="card-title">Choose Size and Crust</h3>
+    <p class="card-text"><h4>Hand Tossed</h4>
+              <ul class="list-group">
+
+                  <li class="list-group-item"></li>
+                  <li class="list-group-item">Garlic seasoned crust with rich, buttery taste</li>
+              <li class="list-group-item">
+                  <label><input name="" value="" type="radio"> Small (10")</label>
+              </li>
+
+              <li class="list-group-item">
+                  <label><input name="" value="" type="radio"> Medium (12")</label>
+              </li>
+
+                  <li class="list-group-item">
+                      <label><input name="" value="" type="radio"> Large (20")</label>
+                  </li>
+
+              </ul>
+              <br>
+          <!--</p>-->
+              <!--<div class="card-body">-->
+                  <!--<p class="card-text">-->
+               <ul id="card2"><h4>Crispy Thin</h4>
+
+                  <li class="list-group-item">Thin enough for optimum crispy to crunch ratio.</li>
+                  <li class="list-group-item">
+                      <label><input name="" value="" type="radio"> Small (10")</label>
+                  </li>
+                  <li class="list-group-item">
+                      <label><input name="" value="" type="radio"> medium (12")</label>
+                  </li>
+
+                  <li class="list-group-item">
+                          <label><input name="" value="" type="radio"> Large (20")</label>
+                  </li>
+                      </p>
+                  </ul>
+
+                  <a href="#2" class="btn btn-primary">Next Step</a>
+                  <br>
+
+<!--=========== CHEESE AND SAUSE  ====================---->
+
+                  <div class="card">
+                      <div class="card-body">
+                          <h3 class="card-title">Cheese and Sauce</h3>
+                          <p class="card-text">
+                          <ul class="list-group"><h4>Cheese?</h4>
+                            <li class="list-group-item"><select class="form-control form-control-sm">
+                                  <option>Lite</option>
+                                  <option>Regular</option>
+                                  <option>Extra</option>
+                              </select>
+                              </li>
+                          </ul>
+                          </p>
+                          <div class="card-body">
+                              <p class="card-text">
+                              <ul class="list-group"><h4>Sauces</h4>
+
+
+
+                                  <li class="list-group-item">What Type?<select class="form-control form-control-sm">
+                                      <option></option>
+                                      <option>Robust Inspired Tomato Sauce</option>
+                                  </select>
+                                  </li>
+                              </ul>
+                          </p>
+                          </div>
+                          <div class="card-body">
+                              <p class="card-text">
+                              <ul class="list-group"><h4>How Much?</h4>
+
+                                  <li class="list-group-item"><select class="form-control form-control-sm">
+                                      <option>Lite</option>
+                                      <option>Regular</option>
+                                      <option></option>
+                                  </select>
+                                  </li>
+                              </ul>
+                              </p>
+                          </div>
+
+                          <a href="#" class="btn btn-primary">Go Back</a>
+                          <a href="#" class="btn btn-primary">Next</a>
+                          </div>
+                      </div>
+
+                      
+                      <!----===================== TOPPINGS   ====================------>
+
+                      <div class="card">
+                          <div class="card-body">
+                              <h3 class="card-title">Choose Toppings</h3>
+                              <p class="card-text">
+                              <ul class="list-group"><h4>Choose Meats</h4>
+
+                              <li class="list-group-item">
+                                  <div class="input-group mb-3">
+                                      <label><input type="checkbox" aria-label="Checkbox for following text input"> Beef </label>
+                                  </div>
+
+                              </li>
+                              <li class="list-group-item">
+                                  <div class="input-group mb-3">
+                                      <label><input type="checkbox" aria-label="Checkbox for following text input"> Ham </label>
+                                  </div>
+
+                              </li>
+                              <li class="list-group-item">
+                                  <div class="input-group mb-3">
+                                      <label><input type="checkbox" aria-label="Checkbox for following text input"> Sausage </label>
+                                  </div>
+
+                              </li>
+
+                              <li class="list-group-item">
+                                  <div class="input-group mb-3">
+                                      <label><input type="checkbox" aria-label="Checkbox for following text input"> Bacon </label>
+                                  </div>
+
+                              </li>
+                              </ul>
+
+
+                              <div class="card-body">
+                                  <ul>
+                                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                                  <li class="list-group-item">
+                                      <label><input name="" value="" type="radio"> Small (10")</label>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="input-group mb-3">
+                                                <label><input type="checkbox" aria-label="Checkbox for following text input">Beef </label>
+                                              </div>
+
+                                  </li>
+
+                                  </ul>
+                          </div>
+
+                                  <a href="#" class="btn btn-primary">Check Out</a>
+                              </div>
+                          </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    </main>
           <br>
 
     <!-- Main page content -->
