@@ -60,11 +60,13 @@ h4  {
 /*nav {*/
     /*background-color: yellow;*/
     /*float: left;*/
-}
-
-/*#ch {*/
-    /*color: black;*/
 /*}*/
+
+a#home-tab.nav-link.active {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 
 /*.row {*/
     /*background-color: lightblue;*/
