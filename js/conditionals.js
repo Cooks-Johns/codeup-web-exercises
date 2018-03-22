@@ -146,8 +146,8 @@
 //
 //
 //
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'cyan'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'cyan'];
+// var randomColor = colors[Math.floor(Math.random() * colors.length)];
 //
 // function analyceColors(rainbow){
 //     if(rainbow === 'blue') {
@@ -274,18 +274,18 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
-function calvulateTotal(luckNumber, originalamout) {
-    switch (luckNumber) {
+function calvulateTotal(luckyNumber, ogAlmount) {
+    switch (luckyNumber) {
         case 0:
-            return originalamout;
+            return ogAlmount;
         case 1:
-            return originalamout - (originalamout * .1)
+            return ogAlmount - (ogAlmount * .1);
         case 2:
-            return originalamout * .75;
+            return ogAlmount * .75;
         case 3:
-            return originalamout * .65;
+            return ogAlmount * .65;
         case 4:
-            return originalamout * .5;
+            return ogAlmount * .5;
         case 5:
             return 0;
     }
@@ -305,15 +305,23 @@ function calvulateTotal(luckNumber, originalamout) {
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
-var luckyNumber = Math.floor(Math.random() * 6);
-// 1. Show the user the lucky number
-alert('Your luck number is ' + luckNumber);
-// 2. ask the user for the original price
-var originalAmout = inputNumber('How much did bought?');
-// 3. calculate total
+function ex3() {
 
 
+    // Generate a random number between 0 and 6
+    var luckyNumber = Math.floor(Math.random() * 6);
+    // 1. Show the user the lucky number
+    alert('Your luck number is ' + luckyNumber);
+    // 2. ask the user for the original price
+    var ogAmount = inputNumber('How much did bought?');
+    // 3. calculate total
+    var total = calculateTotal(luckyNumber, ogAmount);
+    // show original price
+    alert('Your total before the discount is ' + ogAmount);
+    // 4. Price after the discount
+    alert('Your total after discount is $' + total.toFixed(2));
+
+}
 
 
 //  =============================   notes   =============================================================
