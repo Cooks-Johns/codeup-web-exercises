@@ -112,7 +112,17 @@ input.form-control {
     padding-left: 1px;
 }
 
+
+/*=============== TESTING ================-*/
+
 /*.material-icon {*/
     /*float: right;*/
     /**/
 /*}*/
+
+
+span.badge.badge-primary {
+    float: left;
+    height: 10px;
+    padding: 5px;
+}
