@@ -1,14 +1,18 @@
 "use strict";
-// set count
-// action
-// pass it through
-function showMultiplicationTable(7) {
 
 
 
-
-    var mult = alert("Enter your Number So we can put it on a table!");
-    for (mult = 0; mult <=10; mult++){
-        document.write(prompt(mult));
-    }
+function getRndInteger(min, max) {
+     return Math.floor(Math.random() * (max - min) + min);
 }
+// getRndInteger(20, 200);
+for(var i = 0; i <= 10; i++) {
+var random = getRndInteger(20, 200);
+   if(random % 2 === 0) {
+       console.log(random + " is even!");
+   } else {
+       console.log(random + " is odd!");
+   }
+}
+
+
