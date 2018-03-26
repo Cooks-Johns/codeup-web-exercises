@@ -10,7 +10,7 @@
      */
 var names = ['Bob', 'Mary', 'Mick', 'Jack'];
 
-var dogs = ['shar pei', 'chow', 'collie', 'pitbull', 'german shepherd', 'husky', 'boxer', 'rottweiler', 'mastiff', 'poodle', 'ridgeback', 'lab']
+var dogs = ['shar pei', 'chow', 'collie', 'pitbull', 'german shepherd', 'husky', 'boxer', 'rottweiler', 'mastiff', 'poodle', 'ridgeback', 'lab ']
 
 
 
