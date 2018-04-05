@@ -29,11 +29,11 @@
 </head>
 <body>
     <div class="container">
-    <h1 id="blowOut">Yo We Coded UP!</h1>
+    <h1 id="mainHead">Yo We Coded UP!</h1>
         <div>
 
             <h2>Id Selectors</h2>
-                <ul>
+                <ul class="list">
                     <li>Create content in your HTML file using at least the following elements: h1, p, ul, li, div.</li>
                     <li>Add several attributes to your elements; you will need both id and class attributes.</li>
                     <li>Use jQuery to select an element by the id. Alert the contents of the element.</li>
@@ -43,7 +43,7 @@
                 </ul>
             <hr>
 
-            <h2>Class Selectors</h2>
+            <h2 id="gotClass">Class Selectors</h2>
             <p>
                 Remove your custom jQuery code from previous exercises.
                 Update your code so that at least 3 different elements have the same class named codeup.
@@ -53,7 +53,7 @@
             </p>
             <hr>
 
-            <h2>Element Selectors</h2>
+            <h2 id="playInRain">Element Selectors</h2>
             <p>
                 Remove your custom jQuery code from previous exercises.
                 Using jQuery, set the font-size of all li elements to 20px.
@@ -61,7 +61,7 @@
                 Create a jQuery statement to alert the contents of your h1 element(s).
             </p>
             <hr>
-            <h2>Multiple Selectors</h2>
+            <h2 id="">Multiple Selectors</h2>
             <p>
                 Combine your selectors that highlight all the h1, p, and li elements.
             </p>
@@ -80,7 +80,14 @@
             alert('Bye! Thanks for the DOM loading!')
         });
 
-        $('h1#blowOut).
+        $('p').css('font-size', '14px');
+        $('h1').css('font-size', '150px');
+        $('h2').css('font-size', '75px');
+        $('li').css('font-size', '45px');
+
+
+
+        console.log.$('h1#blowOut').text
     </script>
 </body>
 </html>
