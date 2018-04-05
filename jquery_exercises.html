@@ -13,11 +13,17 @@
         * {
             background-color: cadetblue;
         }
-        h1 {
+
+        .container {
+                max-width: 1140px;
+                padding: 251px;
+            }
+        h1, h2 {
             text-align: center;
             background-color: white;
             font-family: 'Lobster', cursive;
         }
+
     </style>
 
 </head>
@@ -25,19 +31,20 @@
     <div class="container">
     <h1 id="blowOut">Yo We Coded UP!</h1>
         <div>
-            <p>
+
             <h2>Id Selectors</h2>
-                Create content in your HTML file using at least the following elements: h1, p, ul, li, div.
-                Add several attributes to your elements; you will need both id and class attributes.
-                Use jQuery to select an element by the id. Alert the contents of the element.
-                Update the jQuery code to select and alert a different id.
-                Use the same id on 2 elements. How does this change the jQuery selection
-                Remove the duplicate id. Each id should be unique on that page.
-            </p>
+                <ul>
+                    <li>Create content in your HTML file using at least the following elements: h1, p, ul, li, div.</li>
+                    <li>Add several attributes to your elements; you will need both id and class attributes.</li>
+                    <li>Use jQuery to select an element by the id. Alert the contents of the element.</li>
+                    <li>Update the jQuery code to select and alert a different id.</li>
+                    <li>Use the same id on 2 elements. How does this change the jQuery selection</li>
+                    <li>Remove the duplicate id. Each id should be uniq</li>
+                </ul>
             <hr>
-            <p>
 
             <h2>Class Selectors</h2>
+            <p>
                 Remove your custom jQuery code from previous exercises.
                 Update your code so that at least 3 different elements have the same class named codeup.
                 Using jQuery, create a border around all elements with the class codeup that is 1 pixel wide and red.
@@ -45,8 +52,9 @@
                 Give another element an id of codeup. Does this element get a border now?
             </p>
             <hr>
-            <p>
+
             <h2>Element Selectors</h2>
+            <p>
                 Remove your custom jQuery code from previous exercises.
                 Using jQuery, set the font-size of all li elements to 20px.
                 Craft selectors that highlight all the h1, p, and li elements.
@@ -72,7 +80,7 @@
             alert('Bye! Thanks for the DOM loading!')
         });
 
-        $('#blowOut').
+        $('h1#blowOut).
     </script>
 </body>
 </html>
