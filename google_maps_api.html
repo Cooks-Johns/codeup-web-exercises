@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Maps</title>
+        <style type="text/css">
+            #map-canvas {
+                width: 500px;
+                height: 500px;
+            }
+        </style>
+    </head>
+
+
+    <body>
+
+    <button id="zoom5">Zoom 5x</button>
+    <button id="zoom15">Zoom 15x</button>
+    <button id="zoom20">Zoom 20x</button>
+
+
+    <div id="map-canvas"></div>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAws1k3Nv6e86HdGddlo0uh_cDT0UAejEg"></script>
+    <script>
+    'use strict';
+
+//================================   NEED HELP      ===============
+    function makeMap(zoomLevel) {
+        var mapOptions = {
+            zoom: zoomLevel,
+            center: {
+                lat: 29.426791,
+                lng: -98.489602
+            },
+            mapType: google.maps.MapType.HYBRID
+
+        };
+
+
+//========================================      ===============================
+
+        var mapCanvas = document.getElementById('map-canvas');
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var geocoder = new google.maps.Geocoder();
+
+        // Include code from previous example
+
+        // Set our address to geocode
+
+        function callback(results, status, restaurant) {
+            if (status === google.maps.GeocoderStatus.OK) {
+                // Recenter the map over the address
+                // results[0].geometry.location will contain an object with lat and lng
+                // setter method
+                map.setCenter(results[0].geometry.location);
+                map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
+                map.setZoom(14);
+                var marker = new google.maps.Marker({
+                    position: results[0].geometry.location,
+                    map: map
+                });
+                var info = new google.maps.InfoWindow({
+                    content: restaurant.info
+                });
+                info.open(map, marker);
+            } else {
+                // Show an error message with the status if our request fails
+                alert("Geocoding was not successful - STATUS: " + status);
+            }
+        }
+    }
+
+    var restaurants = [
+        {
+            address: "2403 N St Mary's St, San Antonio, TX 78212",
+            info: 'Chisme'
+        },
+        {address: "28522 Fredericksburg Rd, San Antonio, TX 78229",
+         info: 'Dry Dock'
+        },
+        {address: "726 E Mistletoe Ave, San Antonio, TX 78212",
+        info: 'AttaGirl'
+        }
+    ];
+    restaurants.forEach(function (restaurant) {
+        geocoder.geocode({address: restaurant.address}, function (results, status) {
+            console.log(restaurant);
+            callback(results, status, restaurant);
+        });
+
+
+        document.getElementById('zoom5').addEventListener('click', function () {
+            makeMap(5)
+        });
+
+        document.getElementById('zoom15').addEventListener('click', function () {
+            makeMap(15)
+        });
+
+        document.getElementById('zoom20').addEventListener('click', function () {
+            makeMap(20)
+        });
+    });
+
+
+
+</script>
+</body>
+</html>
+
