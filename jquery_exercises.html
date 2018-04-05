@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css?family=Hi+Melody|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+
 
 
     <style>
@@ -14,16 +17,10 @@
             background-color: cadetblue;
         }
 
-        .container {
-                max-width: 1140px;
-                padding: 251px;
-            }
-        h1, h2 {
-            text-align: center;
-            background-color: white;
-            font-family: 'Lobster', cursive;
-        }
-
+        /*.container {*/
+                /*max-width: 1140px;*/
+                /*padding: 251px;*/
+            /*}*/
     </style>
 
 </head>
@@ -80,14 +77,43 @@
             alert('Bye! Thanks for the DOM loading!')
         });
 
-        $('p').css('font-size', '14px');
-        $('h1').css('font-size', '150px');
-        $('h2').css('font-size', '75px');
-        $('li').css('font-size', '45px');
+        $('p').css({
+            'font-size': '55px',
+            'font-family': 'Pacifico'
+
+        });
+
+        $('h1').css({
+            'font-size': '150px',
+            'font-family': 'Lobster',
+            'background-color': 'white',
+            'text-align': 'center'
 
 
+        });
+        $('h2').css({
+            'font-size': '75px',
+            'font-family': 'Lobster',
+            'background-color': 'white',
+            'text-align': 'center'
 
-        console.log.$('h1#blowOut').text
+        });
+
+        $('li').css({
+            'font-size': '25px',
+            'text-align': 'center'
+
+        });
+
+        // $('container').css({
+        //          {
+        //         'max-width': '1140px',
+        //         'padding': '251px'
+        //
+        // });
+
+
+        console.log.$('h1#blowOut').text('h2')
     </script>
 </body>
 </html>
