@@ -23,18 +23,56 @@
 </head>
 <body>
     <div class="container">
-    <h1>Yo We Coded UP!</h1>
+    <h1 id="blowOut">Yo We Coded UP!</h1>
+        <div>
+            <p>
+            <h2>Id Selectors</h2>
+                Create content in your HTML file using at least the following elements: h1, p, ul, li, div.
+                Add several attributes to your elements; you will need both id and class attributes.
+                Use jQuery to select an element by the id. Alert the contents of the element.
+                Update the jQuery code to select and alert a different id.
+                Use the same id on 2 elements. How does this change the jQuery selection
+                Remove the duplicate id. Each id should be unique on that page.
+            </p>
+            <hr>
+            <p>
+
+            <h2>Class Selectors</h2>
+                Remove your custom jQuery code from previous exercises.
+                Update your code so that at least 3 different elements have the same class named codeup.
+                Using jQuery, create a border around all elements with the class codeup that is 1 pixel wide and red.
+                Remove the class from one of the elements. Refresh and test that the border has been removed.
+                Give another element an id of codeup. Does this element get a border now?
+            </p>
+            <hr>
+            <p>
+            <h2>Element Selectors</h2>
+                Remove your custom jQuery code from previous exercises.
+                Using jQuery, set the font-size of all li elements to 20px.
+                Craft selectors that highlight all the h1, p, and li elements.
+                Create a jQuery statement to alert the contents of your h1 element(s).
+            </p>
+            <hr>
+            <h2>Multiple Selectors</h2>
+            <p>
+                Combine your selectors that highlight all the h1, p, and li elements.
+            </p>
+
+        </div>
     </div>
+
+
+    <script src="js/jQuery-v2.2.4.js"></script>
+
     <script>
         'use strict';
-        window.onload = function() {
-            alert( 'Thanks For the dom loading!');
-        };
+
 
         $(document).ready(function(){
-            prompt('Bye')
+            alert('Bye! Thanks for the DOM loading!')
         });
+
+        $('#blowOut').
     </script>
-<script src="js/jQuery-v2.2.4.js"></script>
 </body>
 </html>
