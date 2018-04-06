@@ -14,13 +14,13 @@
 
     <style>
         * {
-            background-color: cadetblue;
+            background-color: #E5EECC;
         }
 
-        /*.container {*/
-                /*max-width: 1140px;*/
-                /*padding: 251px;*/
-            /*}*/
+        .container {
+                max-width: 1140px;
+                padding: 251px;
+            }
     </style>
 
 </head>
@@ -28,27 +28,42 @@
     <div class="container">
     <h1 id="mainHead">Yo We Coded UP!</h1>
         <div>
+            <div class="blackLine"></div>
 
-            <h2>Id Selectors</h2>
+            <!--=================                    flip pannels                            -->
+            <div id="flip"> <h2>Id Selectors</h2></div>
+            <div id="panel">
                 <ul class="list">
-                    <li>Create content in your HTML file using at least the following elements: h1, p, ul, li, div.</li>
-                    <li>Add several attributes to your elements; you will need both id and class attributes.</li>
-                    <li>Use jQuery to select an element by the id. Alert the contents of the element.</li>
-                    <li>Update the jQuery code to select and alert a different id.</li>
-                    <li>Use the same id on 2 elements. How does this change the jQuery selection</li>
-                    <li>Remove the duplicate id. Each id should be uniq</li>
+                    <li class="codeUp">Create content in your HTML file using at least the following elements: h1, p, ul, li, div.</li>
+                    <li class="codeUp">Add several attributes to your elements; you will need both id and class attributes.</li>
+                    <li class="codeUp">Use jQuery to select an element by the id. Alert the contents of the element.</li>
+                    <li class="codeUp">Update the jQuery code to select and alert a different id.</li>
+                    <li class="codeUp">Use the same id on 2 elements. How does this change the jQuery selection</li>
+                    <li class="codeUp"r>Remove the duplicate id. Each id should be uniq</li>
                 </ul>
-            <hr>
+            </div>
 
-            <h2 id="gotClass">Class Selectors</h2>
-            <p>
-                Remove your custom jQuery code from previous exercises.
-                Update your code so that at least 3 different elements have the same class named codeup.
-                Using jQuery, create a border around all elements with the class codeup that is 1 pixel wide and red.
-                Remove the class from one of the elements. Refresh and test that the border has been removed.
-                Give another element an id of codeup. Does this element get a border now?
-            </p>
-            <hr>
+            <!--->
+
+
+            <div class="blackLine"></div>
+
+
+            <div id="flip"><h2 id="gotClass">Class Selectors</h2></div>
+            <div id="panel">
+                <ul class="list">
+                    <li class="codeUp">Create content in your HTML file using at least the following elements: h1, p, ul, li, div.</li>
+                    <li class="codeUp">Add several attributes to your elements; you will need both id and class attributes.</li>
+                    <li class="codeUp">Use jQuery to select an element by the id. Alert the contents of the element.</li>
+                    <li class="codeUp">Update the jQuery code to select and alert a different id.</li>
+                    <li class="codeUp">Use the same id on 2 elements. How does this change the jQuery selection</li>
+                    <li class="codeUp"r>Remove the duplicate id. Each id should be uniq</li>
+                </ul>
+            </div>
+
+            <!--->
+            <div class="blackLine">
+            </div>
 
             <h2 id="playInRain">Element Selectors</h2>
             <p>
@@ -57,7 +72,7 @@
                 Craft selectors that highlight all the h1, p, and li elements.
                 Create a jQuery statement to alert the contents of your h1 element(s).
             </p>
-            <hr>
+            <div class="blackLine"></div>
             <h2 id="">Multiple Selectors</h2>
             <p>
                 Combine your selectors that highlight all the h1, p, and li elements.
@@ -72,9 +87,28 @@
     <script>
         'use strict';
 
+        //==========
+        var whatText = $('#what').text();
+        if(whatText.includes('z')) {
+            $('what').text('no zebras found');
 
-        $(document).ready(function(){
-            alert('Bye! Thanks for the DOM loading!')
+        }
+        alert(whatText);
+            //------------   old
+        // $(document).ready(function(){
+        //     alert('Bye! Thanks for the DOM loading!')
+        // });
+        //---------
+
+        $('.codeUp').css({
+            'border-style': 'solid',
+             'border-color': 'red 1 px'
+
+        });
+
+        $('.blackLine').css({
+            'border-style': 'solid',
+            'border-color': 'red 1 px'
         });
 
         $('p').css({
@@ -82,6 +116,8 @@
             'font-family': 'Pacifico'
 
         });
+
+
 
         $('h1').css({
             'font-size': '150px',
@@ -95,25 +131,51 @@
             'font-size': '75px',
             'font-family': 'Lobster',
             'background-color': 'white',
-            'text-align': 'center'
+            'text-align': 'center',
+            'border-style':'solid',
+            'border-color': 'grey'
 
         });
 
         $('li').css({
-            'font-size': '25px',
-            'text-align': 'center'
+            'font-size': '20px',
+            'text-align': 'center',
+
 
         });
 
-        // $('container').css({
-        //          {
-        //         'max-width': '1140px',
-        //         'padding': '251px'
-        //
-        // });
+        $('container').css({
 
+                'max-width': '1140px',
+                'padding': '251px',
+                'text-align': 'center'
 
-        console.log.$('h1#blowOut').text('h2')
+        });
+
+        // drop down
+        // drop down
+        $(document).ready(function(){
+            $(".flip").click(function(){
+                $(".panel").slideDown("slow");
+            });
+        });
+
+        $('.panel').css({
+            'padding': '5px',
+            'text-align': 'center',
+            'background-color': '#e5eecc',
+            'border': 'solid 1px #c3c3c3'
+        });
+
+        $('.flip ').css({
+            'padding': '5px',
+            'text-align': 'center',
+            'background-color': '#e5eecc',
+            'border': 'solid 1px #c3c3c3'
+        })
+
+        // console.log.$('h1#blowOut').text('h2');
+
     </script>
 </body>
 </html>
