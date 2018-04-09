@@ -15,7 +15,7 @@
                 * {
                     text-align: center;
                 }
-                dd {
+                .highlight {
                     background-color: #FF0;
                 }
             </style>
@@ -27,70 +27,96 @@
         <h1 class="mainHeader">National Park FAQ</h1>
         <a id="highlight-important">Click for answers.</a>
 
-        <button></button>
+        <button id="flick" type="submit">Select Last</button>
 
-        <dl>
-            <dt>1. How did Yellowstone get its name?</dt>
-            <dd class="invisible">Yellowstone National Park is named after the Yellowstone
-                River, the major river running through the park. According
-                to French-Canadian trappers in the 1800s, they asked the
-                name of the river from the Minnetaree tribe, who live in
-                what is now eastern Montana. They responded “Mi tse a-da-zi,”
-                which literally translates as “Rock Yellow River.” The trappers
-                translated this into French as “Roche Jaune” or “Pierre Jaune.”
-                In 1797, explorer-geographer David Thompson used the English
-                translation—“Yellow Stone.” Lewis and Clark called the Yellowstone
-                River by the French and English forms.
-                Subsequent use formalized the name as “Yellowstone.</dd>
-            <br>
+        <!--<dl>-->
+            <!--<dt>1. How did Yellowstone get its name?</dt>-->
+            <!--<dd class="invisible">Yellowstone National Park is named after the Yellowstone-->
+                <!--River, the major river running through the park. According-->
+                <!--to French-Canadian trappers in the 1800s, they asked the-->
+                <!--name of the river from the Minnetaree tribe, who live in-->
+                <!--what is now eastern Montana. They responded “Mi tse a-da-zi,”-->
+                <!--which literally translates as “Rock Yellow River.” The trappers-->
+                <!--translated this into French as “Roche Jaune” or “Pierre Jaune.”-->
+                <!--In 1797, explorer-geographer David Thompson used the English-->
+                <!--translation—“Yellow Stone.” Lewis and Clark called the Yellowstone-->
+                <!--River by the French and English forms.-->
+                <!--Subsequent use formalized the name as “Yellowstone.</dd>-->
+            <!--<br>-->
 
-            <dt>2. Is Yellowstone the largest national park?</dt>
-            <dd class="invisible">No. More than half of Alaska’s national park units are larger, including Wrangell–St. Elias National Park and Preserve, which is the largest unit (13 million acres) in the National Park System. Until 1994, Yellowstone (at 2.2 million acres) was the largest national park in the contiguous United States. That year Death Valley National Monument was expanded and became a national park—it has more than 3 million acres.</dd>
-            <br>
+            <!--<dt>2. Is Yellowstone the largest national park?</dt>-->
+            <!--<dd class="invisible">No. More than half of Alaska’s national park units are larger, including Wrangell–St. Elias National Park and Preserve, which is the largest unit (13 million acres) in the National Park System. Until 1994, Yellowstone (at 2.2 million acres) was the largest national park in the contiguous United States. That year Death Valley National Monument was expanded and became a national park—it has more than 3 million acres.</dd>-->
+            <!--<br>-->
 
-            <dt>3. Is Yellowstone the most visited national park?
-            </dt>
-            <dd class="invisible">Yellowstone is in the top five national parks for number of recreational visitors. Great Smoky Mountains National Park often has the most. Visit https://irma.nps.gov/Stats/ to view up-to-date statistics for all national parks.</dd>
-            <br>
+            <!--<dt>3. Is Yellowstone the most visited national park?-->
+            <!--</dt>-->
+            <!--<dd class="invisible">Yellowstone is in the top five national parks for number of recreational visitors. Great Smoky Mountains National Park often has the most. Visit https://irma.nps.gov/Stats/ to view up-to-date statistics for all national parks.</dd>-->
+            <!--<br>-->
 
-            <dt>4. What is the difference between a national park and a national forest?
-            </dt>
-            <dd class="invisible">National parks are administered by the Department of the Interior and national forests by the Department of Agriculture. The National Park Service is mandated to preserve resources unimpaired, while the Forest Service is mandated to wisely manage resources for many sustainable uses. Six national forests surround Yellowstone National Park.</dd>
-            <br>
+            <!--<dt>4. What is the difference between a national park and a national forest?-->
+            <!--</dt>-->
+            <!--<dd class="invisible">National parks are administered by the Department of the Interior and national forests by the Department of Agriculture. The National Park Service is mandated to preserve resources unimpaired, while the Forest Service is mandated to wisely manage resources for many sustainable uses. Six national forests surround Yellowstone National Park.</dd>-->
+            <!--<br>-->
 
-            <dt>5. How many rangers work in Yellowstone?
-            </dt>
-            <dd class="invisible">Approximately 773 people work for the National Park Service during the peak summer season. Approximately 330 are permanent, year-round employees. Park rangers work in education, resource management, law enforcement, emergency medical services, and backcountry operations. Other employees specialize in research, maintenance, management, administration, trail maintenance, fire management, and fee collection.</dd>
-            <br>
+            <!--<dt>5. How many rangers work in Yellowstone?-->
+            <!--</dt>-->
+            <!--<dd class="invisible">Approximately 773 people work for the National Park Service during the peak summer season. Approximately 330 are permanent, year-round employees. Park rangers work in education, resource management, law enforcement, emergency medical services, and backcountry operations. Other employees specialize in research, maintenance, management, administration, trail maintenance, fire management, and fee collection.</dd>-->
+            <!--<br>-->
 
-            <dt>6. How do you become a park ranger?
-            </dt>
-            <dd class="invisible">Many National Park Service employees begin their careers as volunteers or as seasonal employees. Hiring is very competitive and is conducted through the Office of Personnel Management. Learn more about working with us.</dd>
-            <br>
+            <!--<dt>6. How do you become a park ranger?-->
+            <!--</dt>-->
+            <!--<dd class="invisible">Many National Park Service employees begin their careers as volunteers or as seasonal employees. Hiring is very competitive and is conducted through the Office of Personnel Management. Learn more about working with us.</dd>-->
+            <!--<br>-->
 
-            <dt>7. Can we swim in rivers and lakes?
-            </dt>
-            <dd class="invisible">Swimming is not recommended because most lakes and streams are dangerously cold. Firehole Canyon, near Madison Junction, has a swimming area popular in summer. Soaking in thermal features is illegal. The area known as the Boiling River, north of Mammoth Hot Springs, allows soaking in the Gardner River near thermal outflow, but not in the feature itself. Soaking is allowed during daylight hours only and at your own risk.</dd>
-            <br>
+            <!--<dt>7. Can we swim in rivers and lakes?-->
+            <!--</dt>-->
+            <!--<dd class="invisible">Swimming is not recommended because most lakes and streams are dangerously cold. Firehole Canyon, near Madison Junction, has a swimming area popular in summer. Soaking in thermal features is illegal. The area known as the Boiling River, north of Mammoth Hot Springs, allows soaking in the Gardner River near thermal outflow, but not in the feature itself. Soaking is allowed during daylight hours only and at your own risk.</dd>-->
+            <!--<br>-->
 
-            <dt>8. What is the highest peak in the park?
-            </dt>
-            <dd class="invisible">Eagle Peak in the southeastern part of Yellowstone is the highest at 11,358 feet.
+            <!--<dt>8. What is the highest peak in the park?-->
+            <!--</dt>-->
+            <!--<dd class="invisible">Eagle Peak in the southeastern part of Yellowstone is the highest at 11,358 feet.-->
 
-                Why is Yellowstone called a biosphere reserve and a world heritage site?
-                The United Nations designated Yellowstone National Park as a biosphere reserve and a world heritage site in recognition of the worldwide significance of its natural and cultural resources.</dd>
-            <br>
+                <!--Why is Yellowstone called a biosphere reserve and a world heritage site?-->
+                <!--The United Nations designated Yellowstone National Park as a biosphere reserve and a world heritage site in recognition of the worldwide significance of its natural and cultural resources.</dd>-->
+            <!--<br>-->
 
-            <dt>9. What is the Continental Divide?
-            </dt>
-            <dd class="invisible">Think of the Continental Divide as the crest of the continent. Theoretically, when precipitation falls on the west side of the Divide, it eventually reaches the Pacific Ocean. When it falls on the east side of the Divide, it eventually reaches the Atlantic Ocean. In Yellowstone (as elsewhere), this ridgeline is not straight. You cross the Continental Divide three times between the South Entrance and the Old Faithful area. Craig Pass is the highest crossing, at 8,262 feet.</dd>
-            <br>
+            <!--<dt>9. What is the Continental Divide?-->
+            <!--</dt>-->
+            <!--<dd class="invisible">Think of the Continental Divide as the crest of the continent. Theoretically, when precipitation falls on the west side of the Divide, it eventually reaches the Pacific Ocean. When it falls on the east side of the Divide, it eventually reaches the Atlantic Ocean. In Yellowstone (as elsewhere), this ridgeline is not straight. You cross the Continental Divide three times between the South Entrance and the Old Faithful area. Craig Pass is the highest crossing, at 8,262 feet.</dd>-->
+            <!--<br>-->
 
-            <dt>10. How did Mt. Washburn form?
-            </dt>
-            <dd class="invisible">At 10,243 feet, this peak can be seen from many locations in the park. It is a remnant of an extinct volcano from the Absaroka Volcanics of about 50 million years ago. The volcano was literally cut in half by a volcanic eruption 640,000 years ago. Only the northern part of the original volcano is still visible.</dd>
-        </dl>
+            <!--<dt>10. How did Mt. Washburn form?-->
+            <!--</dt>-->
+            <!--<dd class="invisible">At 10,243 feet, this peak can be seen from many locations in the park. It is a remnant of an extinct volcano from the Absaroka Volcanics of about 50 million years ago. The volcano was literally cut in half by a volcanic eruption 640,000 years ago. Only the northern part of the original volcano is still visible.</dd>-->
+        <!--</dl>-->
 
+        <h2 id="national-parks-heading">FAQ</h2>
+
+        <h3> Mormon Pioneer National Historic Trail</h3>
+        <ul class="parks">
+            <li>across five states</li>
+            <li>70,000 Mormons traveled from 1846 to 1869 to escape religious persecution</li>
+            <li>The Pioneer Company of 1846-1847 established the first route from Nauvoo, Illinois, to Salt Lake City, Utah, covering about 1,300 miles</li>
+            <li>Denali</li>
+        </ul>
+
+        <h3>State Parks of Texas</h3>
+        <ul class="parks">
+            <li>Abilene</li>
+            <li>Big Bend</li>
+            <li>Choke Canyon</li>
+            <li>Davis Mountains</li>
+        </ul>
+
+        <h3>Arches National Park</h3>
+        <ul class="parks">
+            <li>the park is adjacent to the Colorado River, 4 miles (6 km) north of Moab, Utah. </li>
+            <li>It contains the highest density of natural arches in the world.</li>
+            <li>Forty-three arches are known to have collapsed since 1977. The park receives on average 10 inches (250 mm) of rain a year.</li>
+            <li>Forty-three arches are known to have collapsed since 1977. </li>
+
+        </ul>
 
 
 
@@ -109,15 +135,27 @@
 
             });
 
+            $('h2').css({
+                'background-color': 'green',
+                'text-align': 'center',
+                'font-family': 'Lobster',
+                'text-decoration': 'underline'
+
+            });
+
             $('dt').css({
                 'font-weight': '47px',
                 'font-family': 'Pacifico'
             });
 
 
-            $('button').click(function(){
-                $('dd').toggleClass('invisible')
-            });
+            //-------------------------------   Actions     -----------------------
+
+            // $('li').last().css('background-color', 'salmon');
+
+            // $('li').click(function(){
+            //     $(this).css('font-weight', ' bold')
+            // });
 
 
             $('dt').click(function () {
@@ -125,14 +163,34 @@
                 $(this).next().toggleClass('invisible');
             });
 
-            //-------------------------------   Actions     -----------------------
-
             $(document).ready(function() {
                 $('#highlight-important').click(function(event) {
                     event.preventDefault();
                     $('.important').addClass('highlighted');
                 });
             });
+
+           // Create a button that, when clicked, makes the last li in each ul have a yellow background.
+
+
+            $('button').click(function () {
+                $('ul').each(function(index, element){
+                    $(element).children().last().addClass('highlight')
+                })
+            });
+            //When any h3 is clicked, the lis underneath it should be bolded. Use font-weight: bold to achieve this.
+
+            $('h3').click(function (event) {
+                    $(this).next().children().css('font-weight', ' bold');
+            });
+
+            //When any list item is clicked, first li of the parent ul should have a font color of blue.
+            $('li').click(function () {
+                // $('li:first-child').css('color', 'blue');  // ----       this will turn them all at the same time
+                $(this).parent().children().first().css('color', 'blue');
+            })
+
+
         </script>
         </body>
 </html>
