@@ -22,9 +22,25 @@
         </head>
         <body>
 
+        <div class="signUp">
+            <H1>Would you like to sign up for our newsletter?</H1>
+            <span class="signUp">'x'</span>
+
+        </div>
+      <!-- - h1 that reads '' and a span that has an 'x' in it. When the 'x' is clicked, hide the entire div element.
+
+        - The uls next to each h3 that contain facts about each park should start out hidden,
+        and when the corresponding h3 is clicked, the display of the ul should be toggled with a sliding effect.
+
+       - After the user has been on the page for 8 seconds, an h2 should fade in that asks the user to register for the site.
+
+        - As always, make sure you are adding, commiting and pushing to Github.-->
 
 
-        <h1 class="mainHeader">National Park FAQ</h1>
+
+
+
+        <h2 class="mainHeader">National Park FAQ</h2>
         <a id="highlight-important">Click for answers.</a>
 
         <button id="flick" type="submit">Select Last</button>
@@ -136,7 +152,7 @@
             });
 
             $('h2').css({
-                'background-color': 'green',
+                'background-color': 'salmon',
                 'text-align': 'center',
                 'font-family': 'Lobster',
                 'text-decoration': 'underline'
@@ -181,14 +197,27 @@
             //When any h3 is clicked, the lis underneath it should be bolded. Use font-weight: bold to achieve this.
 
             $('h3').click(function (event) {
-                    $(this).next().children().css('font-weight', ' bold');
+                    $(this).next().children().slideToggle();
             });
 
             //When any list item is clicked, first li of the parent ul should have a font color of blue.
             $('li').click(function () {
                 // $('li:first-child').css('color', 'blue');  // ----       this will turn them all at the same time
                 $(this).parent().children().first().css('color', 'blue');
-            })
+            });
+
+            // $('signUp').fadeIn( 300 ).delay( 800 ).fadeIn( 400 );
+            // $(document).ready(function () {
+            //     $('signUp').fadeIn(1000).removeClass('hidden');
+            // });
+
+            $(document).ready(function(){
+
+                /*! Fades in page on load */
+                $('h1').css('display', 'none');
+                $('h1').fadeIn(30000);
+
+            });
 
 
         </script>
