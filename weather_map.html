@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+
+        <style>
+            body {
+                background-color: lightblue;
+                text-align: center;
+            }
+            .border {
+                border: 1px solid black;
+                height: 250px;
+                background-color: white;
+                text-align: center;
+            }
+            .container {
+                display: flex; /* or inline-flex */
+                background-color: #8c8b8b;
+                text-align: center;
+            }
+
+        </style>
+
+    </head>
+    <body>
+    <h1>Weather Application</h1>
+    <div id="location"></div>
+    <div class="container-fluid">
+        <div class="row border">
+            <div class="col">
+                <h2>Day 1</h2>
+                <div id="first"></div>
+                <p>weather</p>
+            </div>
+            <div class="col">
+                <h2>Day 2</h2>
+                <p>weather</p>
+                <div id="second"></div>
+            </div>
+            <div class="col">
+                <h2>Day 3</h2>
+                <p>weather</p>
+                <div id="third"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jQuery-v2.2.4.js"></script>
+    <script>
+        'use strict';
+        //-------=========     ACTION
+        $('h2').click(function () {
+            $(this).slideToggle();
+        });
+
+
+        setTimeout(function() {
+            $('p').fadeOut()
+        },3500);
+
+
+
+
+        $.get('http://api.openweathermap.org/data/2.5/forecast/daily',{
+            APPID: 'ec23a89cbff5de43dd00cba3c31fef3e',
+            // q:      'San Antonio',
+            lat:    29.423017,
+            lon:   -98.48527,
+            units: 'imperial'
+        }).done(function(data) {
+            // console.log(data.main.temp_max + "\xB0");
+            console.log(data);
+        });
+///--------=====================    notes
+
+
+
+
+
+    </script>
+
+    </body>
+</html>

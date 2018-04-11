@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+///------------ is EVEN
+    var isEven = function(number) {
+        if (number % 2 == 0) {
+            return (true);
+        } else {
+            return (false);
+        }
+    };
+    console.log(isEven(2));
+
+    ///===------------------   REVERSE STRING
+
+    function reverseString(str) {
+        var splitString = str.split('');
+        var reverseArray = splitString.reverse();
+        var joinArray = reverseArray.join('');
+        return joinArray;
+    }
+    console.log(reverseString('hello'));
+    
+    var spaceString = function () {
+        
+    }
+    
+    var isPalindrome = function () {
+        
+    }
+
+
+
+</script>
+</body>
+</html>
