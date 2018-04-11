@@ -28,30 +28,40 @@
 
     </head>
     <body>
-    <h1>Weather Application</h1>
+    <button type="button" id="button" class="btn btn-primary btn-sm btn-block"><h1>Weather Application</h1></button>
+    <input class="homeLong" type="text" placeholder="Longitude">
+    <input class="homeLat" type="text" placeholder="Latitude">
+
+
+    <h2>San Antonio</h2>
+
     <div id="location"></div>
     <div class="container-fluid">
         <div class="row border">
             <div class="col">
                 <h2>Day 1</h2>
-                <div id="first"></div>
+                <div class="tog" id="first"></div>
                 <p>weather</p>
             </div>
             <div class="col">
                 <h2>Day 2</h2>
                 <p>weather</p>
-                <div id="second"></div>
+                <div class="tog" id="second"></div>
             </div>
             <div class="col">
                 <h2>Day 3</h2>
                 <p>weather</p>
-                <div id="third"></div>
+                <div class="tog" id="third"></div>
             </div>
         </div>
     </div>
 
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+    </script>
 
-    <script src="js/jQuery-v2.2.4.js"></script>
     <script>
         'use strict';
         //-------=========     ACTION
@@ -64,19 +74,66 @@
             $('p').fadeOut()
         },3500);
 
-
-
-
-        $.get('http://api.openweathermap.org/data/2.5/forecast/daily',{
-            APPID: 'ec23a89cbff5de43dd00cba3c31fef3e',
-            // q:      'San Antonio',
-            lat:    29.423017,
-            lon:   -98.48527,
-            units: 'imperial'
-        }).done(function(data) {
-            // console.log(data.main.temp_max + "\xB0");
-            console.log(data);
+        $('button').onclick(function (event) {
+            $('.tog').slideToggle('tog')
         });
+        $('#button').click(function (event) {
+            $(event.target).parent().hide;
+        });
+
+        $('input').hide();
+
+        ///-----------          WEATHER
+
+        var request = $.get('http://api.openweathermap.org/data/2.5/weather', {
+            APPID: 'ec23a89cbff5de43dd00cba3c31fef3e',
+            q:  'san antonio',
+            units: 'imperial'
+        });
+
+        request.done(function(response) {
+            console.log(response);
+            console.log(response.main.humidity);
+            console.log(response.main.temp_max);
+            console.log(response.main.temp_min);
+        });
+
+        $.get('http://api.openweathermmap.org/data/2.5/forcast/daily', {
+            APPID: 'ec23a89cbff5de43dd00cba3c31fef3e',
+            lat:    29.423017,
+            lon:    -98.48527,
+            units:  'imperial'
+        }).done(function (response) {
+            $('#first').append('<div id="first">' + '</div>');
+            console.log(response);
+            console.log(response.list[0].temp_max);
+            console.log(response.list[0].temp_min);
+        });
+
+        var request = $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
+            APPID: "ec23a89cbff5de43dd00cba3c31fef3e",
+            lat: 29.423017,
+            lon: -98.49
+        });
+        //--------=================    .EACH()
+
+
+        request.done(function(response) {
+            // return response;
+            response.list.forEach(function(data) {
+                $(".day_one").get("<div id=\"first\">"
+                    + data.weather + "&degC"
+                    + "<p>" + data.clouds + "</p>"
+                    + "<p>" + data.name + "</p>"
+                    + "<p>" + data.pressure + "</p></div>")
+                return response;
+            });
+        });
+        request.fail(onerror);
+
+
+
+
 ///--------=====================    notes
 
 
@@ -84,6 +141,13 @@
 
 
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
     </body>
 </html>
