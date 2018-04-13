@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fancy Coffee Company</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <!----------  bootstrap   ------------>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <!---------- google fonts   ------------>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hi+Melody|Lobster" rel="stylesheet">
+
+
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+
+            <!--->
+        <div class="container">
+        <h1>It's Coffee Time!</h1>
+            <hr>
+        <div class="row">
+            <div class="col-xs-12
+                            col-sm-8
+                            col-md-6
+                            col-lg-4">
+                <div class="box">
+                    <!--//-->
+
+
+                    <!---->
+                    <h2>Roast</h2>
+                    <!----------   DROPDOWN  ------------>
+
+                    <form>
+                        <label class="renderCoffees"></label>
+                        <select id="roast-selection">
+                            <option value="light">light</option>
+                            <option value="medium">medium</option>
+                            <option value="dark">dark</option>
+                        </select>
+                    </form>
+            <!----------==================       TEXT INPUT        ==============================------------>
+
+                    <h2>Coffee Name</h2>
+                    <input type="text" id="myInput" placeholder="Type of beans." title="Type in a name">
+                </div>
+            </div>
+            <div class="col-xs-12
+                            col-sm-8
+                            col-md-6
+                            col-lg-4">
+                <div class="box">
+                    <p id="demo"></p>
+                    <div class="container" id="coffees">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-->
+            <div class="row">
+                <div class="col-xs-12
+                            col-sm-8
+                            col-md-6
+                            col-lg-4">
+                    <div class="box">
+                        <!--//-->
+
+
+                        <!---                  test                             -->
+                        <h2>Roast</h2>
+                        <!----------   DROPDOWN  ------------>
+
+                        <form>
+                            <label class="renderCoffees"></label>
+                            <select id="roast-selection">
+                                <option value="light">light</option>
+                                <option value="medium">medium</option>
+                                <option value="dark">dark</option>
+                            </select>
+                        </form>
+                        <!----------==================       TEXT INPUT        ==============================------------>
+
+                        <h2>Coffee Name</h2>
+                        <input type="text" id="myInput" placeholder="Type of beans." title="Type in a name">
+                    </div>
+                </div>
+                <div class="col-xs-12
+                            col-sm-8
+                            col-md-6
+                            col-lg-4">
+                    <div class="box">
+                        <p id="demo"></p>
+                        <div class="container" id="coffees">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----------==================        SUBMIT BUTTON       ==============================------------>
+
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                        <h4 class="modal-title">Your Order is on its way!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thank You for choosing fancy coffee.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+
+
+
+
+        <script src="indexCoffee.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+    </div>
+    </body>
+</html>
