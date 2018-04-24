@@ -1,139 +1,64 @@
 'use strict';
 
-/*
- * Complete the TODO items below
- */
+
 const users = [
     {
-        name: 'zach',
-        email: 'zach@codeup.com',
-        languages: ['javascript', 'bash']
-    },
-    {
+        id: 1,
         name: 'ryan',
-        email: 'ryan@codeup.com',
-        languages: ['clojure', 'javascript']
+        eamil: 'ryan@codeup.com',
+        languages: ['coljure', 'jacascript']
     },
     {
+        id: 2,
         name: 'luis',
         email: 'luis@codeup.com',
-        languages: ['java', 'scala', 'php']
+        languages: ['java', 'scala', 'php'],
     },
     {
+        id: 3,
+        name: 'zach',
+        email: 'zach@codeup.com',
+        languages: ['javascript', 'bash'],
+    },
+    {
+        id: 4,
         name: 'fernando',
         email: 'fernando@codeup.com',
-        languages: ['java', 'php', 'sql']
+        languages: ['java', 'php', 'sql'],
     },
     {
+        id: 5,
         name: 'justin',
         email: 'justin@codeup.com',
-        languages: ['html', 'css', 'javascript', 'php']
+        languages: ['html', 'css', 'javascript', 'php'],
     },
-
-
-// TODO: fill in your name and email and add some programming languages you know
-
-
-
-// var myContactInfo =
-    {
-        name: 'johnathon',
-        email: 'cooks.johns@codeup.com',
-        languages: ['javaScript', 'html', 'css', 'bootStrap', 'jQuery']
-    }
 ];
 
-console.log(users[5]);
+const result = users.filter(users => users.languages.length > 2);
 
 
-// to the languages array
-// TODO: replace the `var` keyword with `const`, then try to reassign a variable
-// declared as `const`
-
-
-
-const name = 'johnathon';
-const email = 'cooks.johns@gmail.com';
-const languages = ['javaScript', 'html', 'css', 'bootStrap', 'jQuery'];
+console.log((result));
 
 
 
+// Use .filter to create an array of user objects where each user object
+// // has at least 3 languages in the languages array.
+//
+// const userObjects = [
+//     {
+//         id: 1,
+//         languages: ['coljure', 'jacascript', 'php', 'sql', 'java', 'scala']
+//     },
+//     {
+//         id: 2,
+//         languages: ['java', 'scala','coljure', 'jacascript', 'php', 'sql'],
+//     },
+//     {
+//         id: 3,
+//         languages: ['javascript','coljure', 'php', 'sql', 'java', 'scala', 'bash'],
+//     },
+//
+// ];
 
 
 
-
-
-// TODO: rewrite the object literal using object property shorthand
-users.push({
-    name: name,
-    email: email,
-    languages: languages
-});
-
-
-
-
-
-
-
-let emails = [];
-let names = [];
-
-
-
-
-
-
-// TODO: rewrite the following using arrow functions
-users.forEach(user => {
-    emails.push(user.emal);
-    names.push(user.name);
-});
-
-users.forEach(user => {
-    names.push(user.name);
-});
-
-
-
-
-
-
-
-// TODO: replace `var` with `let` in the following declaration
-let developers = [];
-users.forEach(users => {
-
-
-    // TODO: rewrite the code below to use object destructuring assignment
-    //       note that you can also use destructuring assignment in the function
-    //       parameter definition
-   // const name = user.name;
-   // const email = user.email;
-    const languages = users.languages;
-
-
-
-
-
-    // TODO: rewrite the assignment below to use template strings
-    developers.push(`${name} '\'s email is ' ${email}.${name} ' knows ' ${languages.join(', ')}`);
-});
-
-
-
-
-// TODO: Use `let` for the following variable
-let list = '<ul>';
-
-
-
-
-// TODO: rewrite the following loop to use a for..of loop
-for (const developer of developers) {
-
-
-    // TODO: rewrite the assignment below to use template strings
-    list += `'<li> ${developer} </li>`;
-}
-list += '</ul>';
