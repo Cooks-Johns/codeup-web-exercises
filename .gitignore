@@ -1,7 +1,7 @@
 .idea/
-*.iml
-.DS_Store
-.top_flight/
-.backups/
-.notes/
-fun.js
+                  *.iml
+                  .DS_Store
+                  .top_flight/
+                  .backups/
+                  .notes/
+                  fun.js
