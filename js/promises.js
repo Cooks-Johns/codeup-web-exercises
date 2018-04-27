@@ -2,14 +2,41 @@
 
 //=========-------------------  PART 1
 
+function wait(number) {
+    const promise = new Promise((resolve => {
+        setTimeout(() => {
+            resolve();
+        }, number);
+    }));
+    promise.then(() => console.log(`You'll see this after ${number/1000} seconds.`));
+    promise.catch(() => console.log('rejected'));
+    return promise;
+}
 
-const myPromise = new Promise((resolve, reject) => {
-    if (Math.random() > 0.5) {
-        resolve();
-    } else {
-        reject();
-    }
+
+
+//=========-------------------  PART 2
+
+
+
+
+function userCommits(username) {
+    const githubPromise = fetch(`https://api.github.com/users/${username}/events`, {headers: {'Authorization' : 'YOUR_TOKEN_HERE'}});
+    githubPromise
+        .then((response) => response.json())
+        .then(users => {
+            $(".here").text(`${username}'s last commit was ${users[0].created_at}`);
+        });
+}
+
+//=========-------------------  PART 3
+
+
+$("button").click(function () {
+    const value = $("input").val();
+    userCommits(value);
 });
+
 
 
 
