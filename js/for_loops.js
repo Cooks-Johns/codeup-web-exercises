@@ -83,21 +83,12 @@ for(var i = 1; i <= 10; i++) {
 
 var string;
 for(var i = 1; i <= 10; i++) {
+    i = i.toString();
+    string = i.substring(i.length - 1);
+
+    console.log(string.repeat(i));
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -122,4 +113,6 @@ for(var i = 1; i <= 10; i++) {
 // 10
 // 5
 
-
+for(var i = 100; i >= 5; i -= 5) {
+    console.log(i)
+}
