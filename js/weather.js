@@ -28,10 +28,69 @@ function mainContent(response)  {
                 $("#cityName")
         }
     })
-    
+
 }
 
+function main(response) {
+    response.list.forEach(function (data, i) {
+        switch (i) {
+            case 0 :
+                $("#cityname").text(response.city.name);
+                $(".card-group").html("<strong class='card-body text-center' id='box0'><h2>Today</h2><br><h4>" +
+                    data.temp.min + "\xB0" + " / " +
+                    data.temp.max + "\xB0" + "</h4><br><p class='m-0'><strong>" +
+                    data.weather[0].main + ": </strong>" +
+                    data.weather[0].description + "</p>" + "<p class='m-0'><strong>Humidity: </strong>" +
+                    data.humidity + "</p><p class='m-0'><strong>Speed: </strong>" +
+                    data.speed + "</p><p class='m-0'><strong>Pressure: </strong>" +
+                    data.pressure + "</p></div>"
+                );
+                break;
+            case 1 :
+                $("#cityname").text(response.city.name);
+                $(".card-group").append("<div class='card-body text-center' id='box1'><h2>Tomorrow</h2><br><h4>" +
+                    data.temp.min + "\xB0" + " / " +
+                    data.temp.max + "\xB0" + "</h4><br><p class='m-0'><strong>" +
+                    data.weather[0].main + ": </strong>" +
+                    data.weather[0].description + "</p>" + "<p class='m-0'><strong>Humidity: </strong>" +
+                    data.humidity + "</p><p class='m-0'><strong>Speed: </strong>" +
+                    data.speed + "</p><p class='m-0'><strong>Pressure: </strong>" +
+                    data.pressure + "<br>"
+                );
+                break;
+            case 2 :
+                $("#cityname").text(response.city.name);
+                $(".card-group").append("<div class='card-body text-center' id='box2'><h2>2-day forecast</h2><br><h4>" +
+                    data.temp.min + "\xB0" + " / " +
+                    data.temp.max + "\xB0" + "</h4><br><p class='m-0'><strong>" +
+                    data.weather[0].main + ": </strong>" +
+                    data.weather[0].description + "</p>" + "<p class='m-0'><strong>Humidity: </strong>" +
+                    data.humidity + "</p><p class='m-0'><strong>Speed: </strong>" +
+                    data.speed + "</p><p class='m-0'><strong>Pressure: </strong>" +
+                    data.pressure
+                );
+                break;
+            case 3:
+                $("#cityname").text(response.city.name);
+                $(".card-group").append("<div class='card-body text-center' id='box3'><h2>3-day forecast</h2><br><h4>" +
+                    data.temp.min + "\xB0" + " / " +
+                    data.temp.max + "\xB0" + "</h4><br><p class='m-0'><strong>" +
+                    data.weather[0].main + ": </strong>" +
+                    data.weather[0].description + "</p>" + "<p class='m-0'><strong>Humidity: </strong>" +
+                    data.humidity + "</p><p class='m-0'><strong>Speed: </strong>" +
+                    data.speed + "</p><p class='m-0'><strong>Pressure: </strong>" +
+                    data.pressure
+                );
+                break;
 
+
+        }
+
+    });
+}
+
+// ///--------=====================    notes
+//
 //
 //
 //
@@ -110,8 +169,6 @@ function mainContent(response)  {
 // // <div id="first"></div>
 // //     <p>weather</p>
 // //     </div>
-//
-// ///--------=====================    notes
 //
 //
 //
