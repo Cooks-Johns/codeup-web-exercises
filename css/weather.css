@@ -1,19 +1,4 @@
 
-body {
-    background-color: lightblue;
-    text-align: center;
-}
-.border {
-    border: 1px solid black;
-    height: 250px;
-    background-color: white;
-    text-align: center;
-}
-.container {
-    display: flex; /* or inline-flex */
-    background-color: #8c8b8b;
-    text-align: center;
-}
 h1 {
     text-align: center;
 
