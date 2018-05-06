@@ -87,7 +87,50 @@ function main(response) {
         }
 
     });
-}
+
+    var address = {
+
+        zoom: 5.
+        center: address,
+        centermapType: google.maps.MapTpeId.ROADMAP
+
+    }
+};
+
+var map =
+
+var map = new google.maps.Geocoder();
+function callback(results, status) {
+    if (status === google.maps.GeocoderStatus.OK) {
+        map.setCenter(results[0].geometry.location);
+        var marker = new google.maps.Marker({
+            position: results[0].geometry.location,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            draggable: true
+        });
+        google.maps.event.addListener(marker, 'dragend', function () {
+            var c0 = $('#box0');
+            var c1 = $('#box1');
+            var c2 = $('#box2');
+            var c3 = $('#box3');
+            c0.empty();
+            c1.empty();
+            c2.empty();
+            c3.empty();
+            var latitude = marker.getPosition().lat();
+            var longitude = marker.getPosition().lng();
+            request = $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
+                APPID: "8f32c0149a278cdb5f995fbb3d98eba5",
+                lat: latitude,
+                lon: longitude,
+                units: "imperial",
+                cnt: 4
+            });
+            request.done(function (response) {
+                console.log(response);
+                main(response);
+
 
 // ///--------=====================    notes
 //
