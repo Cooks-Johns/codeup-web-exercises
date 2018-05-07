@@ -28,24 +28,29 @@
     border to the width of the element*/
 
 }
-.col-1-half {
+.one-half {
     width: 50%;
     /*background-color: #77AF00;*/
     /*border: 10px solid red;*/
 }
-.col-2-thirds {
+.one-third {
     width: 33.33%;
     /*background-color: yellow;*/
     /*border: 10px solid yellowgreen;*/
 
 }
-.col-3-fourth {
+.one-fourth {
     width: 25%;
     /*background-color: #FF9800;*/
     /*border: 10px solid crimson;*/
 }
 
-.col-4-eights {
+.one-sixth {
+    width: 12.5%;
+    /*background-color: lightseagreen;*/
+}
+
+.one-eight {
     width: 12.5%;
     /*background-color: lightseagreen;*/
 }
