@@ -90,14 +90,22 @@ function main(response) {
 
     var address = {
 
-        zoom: 5.
+        "location": {
+            "lat": -18.717513,
+            "lng": 34.6911
+        }
+    };
+
+    var mapOptions = {
+
+        zoom: 5,
         center: address,
         centermapType: google.maps.MapTpeId.ROADMAP
 
-    }
+
 };
 
-var map =
+
 
 var map = new google.maps.Geocoder();
 function callback(results, status) {
