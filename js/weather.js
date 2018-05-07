@@ -209,8 +209,8 @@ function callback(results, status) {
 //
 //             // + "<p>" + data.imageURL + "</p>"
 //             + "<p>The pressure is " + data.pressure + "</p></div></div>")
-//     });
-// });
+    });
+});
 // request.fail(onerror);
 //
 // //
