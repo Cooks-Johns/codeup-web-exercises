@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>Google Maps</title>
     <style>
+        body {
+            background: #105c48;
+        }
         #map-canvas {
+            position: center;
             width: 500px;
             height: 400px;
         }
@@ -12,13 +16,45 @@
 </head>
 <body>
 
-    <div id="map-canvas"></div>
+    <div>
+      <div id="map-canvas"></div>
+    </div>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDav930EJ-IgdQ1VmvdbOlmU2QulAJmXK4"></script>
     <script>
         var mapOptions = {
+            zoom: 17,
+            center: {
+                lat: 29.423017,
+                lng: -98.48527
+            }
+        };
 
+        var mapCanvas = document.getElementById('map-canvas');
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var geocoder = new google.maps.Geocoder();
+        var address = {
+            address: "Japan, 〒810-0073 Fukuoka Prefecture, Fukuoka, Chuo, Maizuru, 1 Chome−8−38 第１９ラインビル"
+        };
+        function callback(results, status) {
+            if (status === google.maps.GeocoderStatus.OK) {
+                console.log(results);
+                map.setCenter(results[0].geometry.location);
+                var marker = new google.maps.Marker({
+                    position: results[0].geometry.location,
+                    map: map
+                });
+
+                var infowindow = new google.maps.InfoWindow ({
+                    content: "Club-X"
+                });
+
+                infowindow.open(map, marker);
+            } else {
+                alert("Geocoding was not successful - STATUS: " + status);
+            }
         }
+        geocoder.geocode(address, callback);
 
     </script>
 
