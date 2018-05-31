@@ -34,33 +34,19 @@ const users = [
     },
 ];
 
-const result = users.filter(users => users.languages.length > 2);
+const threeLang = users.filter(function(user) {
+    return user.languages.length > 2;
+});
 
+const userEmail = users.map(function(user) {
+    return user.email;
+});
 
-console.log((result));
+const userId = users.reduce(function(id, user) {
+    id[user.id] = user.name;
+    return id;
+}, {});
 
-
-
-// Use .filter to create an array of user objects where each user object
-// // has at least 3 languages in the languages array.
-//
-// const userObjects = [
-//     {
-//         id: 1,
-//         languages: ['coljure', 'jacascript', 'php', 'sql', 'java', 'scala']
-//     },
-//     {
-//         id: 2,
-//         languages: ['java', 'scala','coljure', 'jacascript', 'php', 'sql'],
-//     },
-//     {
-//         id: 3,
-//         languages: ['javascript','coljure', 'php', 'sql', 'java', 'scala', 'bash'],
-//     },
-//
-// ];
-
-
-
-
-
+console.log(threeLang);
+console.log(userEmail);
+console.log(userId);
